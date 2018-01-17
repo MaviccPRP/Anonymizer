@@ -1,0 +1,4 @@
+bin/**
+.git
+lib/stanford*
+misc/ner-model*

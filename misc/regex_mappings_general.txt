@@ -1,0 +1,18 @@
+[Ww]{3}\..+	URI
+^.*@.*\.[a-zA-Z]{2}[a-zA-Z]?$	EMAIL
+^(31|30|[012]\d|\d)\.(0\d|1[012]|\d)\.(\d{1,6})$	DATE
+^[0123][0-9]\/[12][089][0189][0-9]$	DATE
+^[0123][0-9]\/[0189][0-9]$	DATE
+^20[01][0-9]+$	DATE
+^19[5-9][0-9]+$	DATE
+^((?:0[1-46-9]\d{3})|(?:[1-357-9]\d{4})|(?:[4][0-24-9]\d{3})|(?:[6][013-9]\d{3}))$	PLZ
+^(\+49\s)?0[0-9][0-9]+[\/\-\s]{1,3}[0-9-\/]+[0-9\s]{0,4}$	PHONE
+^Herrn$	SALUTE
+^Herr$	SALUTE
+^Frau$	SALUTE
+^Prof\.?$	TITLE
+^Dr\.?$	TITLE
+^med$	TITLE
+([0-3]?[0-9].?)? Januar|([0-3]?[0-9].?)? Februar|([0-3]?[0-9].?)? März|([0-3]?[0-9].?)? April|([0-3]?[0-9].?)? Mai|([0-3]?[0-9].?)? Juni|([0-3]?[0-9].?)? Juli|([0-3]?[0-9].?)? August|([0-3]?[0-9].?)? September|([0-3]?[0-9].?)? Oktober|([0-3]?[0-9].?)? November|([0-3]?[0-9].?)? Dezember	DATE
+Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember	DATE
+[1-9][0-9]-jähriger?	DATE
