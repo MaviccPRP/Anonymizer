@@ -3,7 +3,7 @@
 
 This is a prototype of a de-identification pipeline for German medical admission notes from the cardiology domain. It uses a three step approach to de-identificate medical texts:
 1. Rule based approach using Stanford RegexNER
-2. Spelling variant detection using Yuwono's approach based on levenshtein distance
+2. Spelling variant detection using Yuwono's approach based on Levenshtein distance
 3. Stanford NER based on an out of domain trained model
 
 This tool is am eclipse project. There is currently no runnable JAR file available.
@@ -48,11 +48,11 @@ Copy both jar files (stanford-corenlp-3.8.0.jar and stanford-germn-corenlp-2017-
 ### Performaing de-identification task
 
 - You can start the program inside eclipse. To do so, open the Init class in the init package. Right click in the code and choose *Run configuration*. 
-- Now click on the "Arguments tab" and enter the Location of the docx files. The program will output the following files into the Folder of the docx files:
-    - Outputs anonymized text in plain text
-    - Outputs text labeled with NE in ConLL 2002 format
-    - Outputs text labeled with (KEEP, ANONYMIZE) in CoNLL 2002 format 
-    - Outputs text in CoNLL 2002 format
+- Now click on the "Arguments tab" and enter the location of the docx files. The program will output the following files into the folder of the docx files:
+    - Outputs anonymized text in plain text (.anon)
+    - Outputs text labeled with NE in ConLL 2002 format (.anon.tokenized)
+    - Outputs text labeled with (KEEP, ANONYMIZE) in CoNLL 2002 format (.tokenized_anon)
+    - Outputs text in CoNLL 2002 format (.anon.conll)
 
 ### Example 
 
@@ -100,7 +100,7 @@ anonymizer.jar <path to docx files>
 
 ### Classes
 
-- **Init**: The initializing class containing important resource configurations. For execution it Needs one Argument: <path to docx files>
+- **Init**: The initializing class containing important resource configurations. For execution it needs one Argument: <path to docx files>
 - **Anonymizer**: This class anonymizes a given docx file with a table header containing contact informations and returns the anonymized file with NE as placeholders. 'Peter Pan lives in London' becomes '<PER> <PER> lives in <LOC>'
 - **DocxReader**: Reading the first table of a docx file. and saving the content of all cells in an array containing unique strings
 - **NamedEntityRecognizer**: Loads the Stanford CoreNLP pipeline and annotates a given array of strings    
