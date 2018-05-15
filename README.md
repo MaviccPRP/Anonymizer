@@ -45,7 +45,7 @@ Copy both jar files (stanford-corenlp-3.8.0.jar and stanford-germn-corenlp-2017-
 - Choose *General - Existing Project into Workspace*
 - Select folder and click  *Finish*
 
-### Performaing de-identification task
+### Performing de-identification task
 
 - You can start the program inside eclipse. To do so, open the Init class in the init package. Right click in the code and choose *Run configuration*. 
 - Now click on the "Arguments tab" and enter the location of the docx files. The program will output the following files into the folder of the docx files:
