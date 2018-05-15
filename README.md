@@ -23,7 +23,7 @@ This tool is am eclipse project. There is currently no runnable JAR file availab
 - Gazetteers (included)
 
 #### optional
-- (Cureently the algorithm is configured with the default NER model)
+- (Currently the algorithm is configured with the default NER model)
 - self trained Stanford NER model
 - copy this jar into the misc/ Folder
 - define the folder path to the model in Init class line 27
